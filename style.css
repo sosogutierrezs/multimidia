@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }/*div se ajusta ao conteúdo*/
+  body{ background-color: #1c1c1c;} /*cor de fundo do site*/
+  /*referência para as cores: Adobe color - https://color.adobe.com/pt/create/image*/
+  /*div com a classe topo*/
+  .topo{
+     background-color: #9933cc;
+     color: #ffffff;
+     font-weight: bolder;
+     text-align: center;
+     padding: 15px;
+  }
+  
+  /*div com a classe menu*/
+  .menu {
+    float: left;
+    width: 20%;
+  }
+  /*div com a classe menu e tag ul (lista não ordenada/ unordered list)*/
+   .menu ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+  }
+  /*div com a classe menu, tag ul (lista não ordenada/ unordered list) e tag li (lista / list item)*/
+  .menu ul li {
+     padding: 8px;
+     margin-bottom: 7px;
+     background-color: #33b5e5;     
+     box-shadow: 3px 3px 5px rgba(0,0,0,0.9), 10px 10px 2px rgba(109,109,125,0.5);
+  }  
+  /*tag de link*/
+  a{
+     color: #ffffff;
+     text-decoration:none;
+  }
+  /*tag de link quando passa o mouse "sobre" / hover*/
+  .menu li:hover {
+      background-color: #0099cc; cursor: pointer;
+  }
+  /*div com a classe meio*/
+  .meio {
+      float: left;
+      width: 60%;
+      /*background-color:yellow;*/
+      padding: 25px;
+      color: #fff;
+  }
+  /*div com a classe meio e tag h2*/
+  .meio h2{
+      text-align: center;
+  }
+  
+  /*div com a classe direita*/
+  .direita {
+      float: left;
+      width: 20%;
+      background-color: #33b5e5;
+      color: #ffffff; 
+      padding: 10px;
+  }
+  /*div com a classe rodape*/
+  .rodape {
+      float: left;
+      width: 100%;
+  }
+  
+  /*Aqui começa a responsividade para tablet e celular*/
+  
+  @media only screen and (max-width:800px) {
+    /* Para tablets: */
+    .meio {
+      width: 80%;
+    }
+    .direita {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width:500px) {
+    /* Para mobile cel: */
+    .menu, .meio, .direita, .rodape {
+      width: 100%;
+    }
+  }
